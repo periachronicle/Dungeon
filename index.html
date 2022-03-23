@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dungeon</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+
+        @media all and (max-width: 500px) {
+            body{
+                font-family: 'Bebas Neue', cursive;
+            }
+        
+        }
+        
+        /* 반응형 배경색,폰트  */
+           body{
+               background-image: url('https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80');
+               background-repeat: no-repeat;
+               background-size: cover;
+           }
+            /*배경*/
+           #upstair{
+               background:url("https://images.unsplash.com/photo-1618306946859-162d27cd4617?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+               background-size:cover;
+               width:25%;
+               margin:auto;
+               display:block;
+               height:200px;
+               color:white;
+            }
+            /* 버튼이미지 및 스타일 */
+            a{
+                text-decoration-line:none;
+            }
+           /* 하이퍼링크밑줄제거 */
+            h1{
+                border: 1px solid red;
+                padding: 0px;
+                display:inline;
+            }
+            /* 제목꾸미기 */
+
+            /*            #gr{
+                display:grid;
+                grid-template-columns:1fr 1fr;
+            } 그리드설정 */
+        </style>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7S3S2YWH03"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7S3S2YWH03');
+        </script>
+        <!-- 구글 접속자분석 -->
+    </head>
+    <body style="background-color:red; color:white;">
+            <input id="upstair" type="button" value="다음층탐색" onclick="alert('다음층탐색');">
+        <!-- 탐색버튼 -->
+                
+        <h1><a href="index.html">처음으로</a></h1>
+        <br>
+        <div>
+        <a href="초급.html">초급</a>
+        <a href="중급.html">중급</a>
+        <a href="고급.html">고급</a>
+        </div>
+        <!-- 난이도 -->
+        <script>
+        document.write('<br>');
+        document.write("Welcome to dungeon")
+        document.write('<br>');
+        let level=1;
+        let lvstr=2;
+        let nowstr=level*lvstr;
+        document.write("현재공격력:"+nowstr);
+        </script>
+        <input type="button" value="gamestart" onclick="alert('hi');alert('what is your name');">
+        <input type="button" value="절전모드온" onclick="document.querySelector('body').style.backgroundColor='black'; ">
+        <input type="button" value="절전모드오프" onclick="document.querySelector('body').style.backgroundColor='white'; ">
+        <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://daegu-ai-school.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <!-- 댓글기능 -->
+    </body>
+</html>
